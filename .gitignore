@@ -1,4 +1,5 @@
 .direnv
 main
 out
+.clangd
 
