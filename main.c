@@ -8,34 +8,48 @@
 
 int main() {
 
-    int y = 15;
-    int x = 15;
+    // int y = 15;
+    // int x = 15;
+    //
+    // initscr();
+    // mvprintw(y, x, "DUDUDUUDDUD\n");
+    // refresh();
+    // noecho();
+    // getch();
+    //
+    // /* from tutorial */
+    //
+    // raw(); /* disable line buffering */
+    // keypad(stdscr, TRUE);
+    // noecho(); 
+    //
+    // printw("im gonna bold typed character\n");
+    // int ch = getch();
+    //
+    // if (ch == KEY_F(1)) printw("you have pressed the F1");
+    // else {
+    //     printw("you have pressed: ");
+    //     attron(A_BOLD);
+    //     printw("%c", ch);
+    //     attroff(A_BOLD);
+    // }
+    //
+    // refresh();
+    //
+    // getch();
+    // endwin();
 
     initscr();
-    mvprintw(y, x, "DUDUDUUDDUD\n");
-    refresh();
     noecho();
+    refresh();
     getch();
 
-    /* from tutorial */
+    // start stuff
+ 
+    printw("DUPA");
 
-    raw(); /* disable line buffering */
-    keypad(stdscr, TRUE);
-    noecho(); 
-
-    printw("im gonna bold typed character\n");
-    int ch = getch();
-
-    if (ch == KEY_F(1)) printw("you have pressed the F1");
-    else {
-        printw("you have pressed: ");
-        attron(A_BOLD);
-        printw("%c", ch);
-        attroff(A_BOLD);
-    }
+    // end stuff
     
-    refresh();
-
     getch();
     endwin();
 
